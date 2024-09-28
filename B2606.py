@@ -25,7 +25,8 @@ for i in range(m):
 # 노드의 방문 여부 저장할 리스트 선언
 visited = [0] * (n+1)
 
-count = 0
+# 1번컴퓨터부터 탐색
 dfs(1)
 
+# 방문한 컴퓨터에서 1번 컴퓨터 값 빼고 출력
 print(sum(visited)-1)
